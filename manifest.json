@@ -2,5 +2,12 @@
     "name": "YouTube Extension",
     "description": "Easy way to Download YouTube Video's.",
     "version": "0.1",
-    "manifest_version": 3
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/watch*"],
+            "js": ["src/main.js"]
+        }
+    ]
+
 }
